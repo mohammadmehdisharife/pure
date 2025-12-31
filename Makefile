@@ -11,4 +11,7 @@ $(TARGET): $(SOURCE)
 clean:
 	rm -f $(TARGET)
 
-.PHONY: all clean
+install:
+	sudo cp $(TARGET) /bin/
+
+.PHONY: all clean install
